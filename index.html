@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Becoming a developer by Rodrigo Pontes</title>
+
+    <style>
+      main {
+          width: 90%;
+          max-width: 700px;
+          margin: auto;
+      }
+
+      h1, label {
+        font-family: monospace;
+      }
+
+      p {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      main div label {
+      	padding:  5px;
+      	position: relative;
+      	z-index: 20;
+      	display: block;
+      	cursor: pointer;
+      	color: #000;
+        font-size: 20px;
+      	border-bottom: solid 1px #000;
+      }
+
+      main div label:hover {
+        background: #eee;
+      }
+
+      main div input:checked + label,
+      main div input:checked + label{
+      	background: #333;
+      	color: #fff;
+      }
+
+      main div label:after,
+      main div input:checked + label:after{
+      	content: '+';
+      	position: absolute;
+      	left: -20px;
+      }
+
+      main div input:checked + label:after{
+      	content: '-';
+        color: #000;
+      }
+
+      main div input {
+        display: none;
+      }
+
+      main div article{
+      	overflow: hidden;
+      	height: 0px;
+      	position: relative;
+      	z-index: 10;
+        border-left: dotted 1px #eee;
+        border-bottom: dotted 1px #444;
+      	transition:	height 0.3s ease-in-out;
+      }
+
+      main div input:checked ~ article{
+      	transition: height 0.5s ease-in-out;
+        height: 1200px;
+      }
+
+      @media screen and (max-width: 699px) {
+        main div label {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <h1>Becoming a developer</h1>
+
+        <p>Some of my learnings and ideas on changing careers to become a software developer.</p>
+    </header>
+
+    <main>
+      <div>
+        <input id="post-1" type="checkbox" checked>
+        <label for="post-1">Title of my first post</label>
+
+        <article>
+          <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus.
+            Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Per aumento de cachacis, eu reclamis.
+            Mé faiz elementum girarzis, nisi eros vermeio.
+          </p>
+
+          <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Per aumento de cachacis, eu reclamis.
+          </p>
+
+          <p>
+            Cevadis im ampola pa arma uma pindureta. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+          </p>
+
+          <p>
+            Atirei o pau no gatis, per gatis num morreus. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Sapien in monti palavris qui num significa nadis i pareci latim. Delegadis gente finis, bibendum egestas augue arcu ut est.
+          </p>
+
+          <p>
+            Si num tem leite então bota uma pinga aí cumpadi! Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Viva Forevis aptent taciti sociosqu ad litora torquent. In elementis mé pra quem é amistosis quis leo.
+          </p>
+
+          <p>
+            Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Paisis, filhis, espiritis santis.
+          </p>
+
+          <p>
+            Quem num gosta di mé, boa gentis num é. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Mé faiz elementum girarzis, nisi eros vermeio. Detraxit consequat et quo num tendi nada.
+          </p>
+
+          <p>
+            Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Interagi no mé, cursus quis, vehicula ac nisi.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright 2017</p>
+    </footer>
+  </body>
+</html>
