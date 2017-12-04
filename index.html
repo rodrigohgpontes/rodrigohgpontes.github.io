@@ -14,8 +14,12 @@
           margin-left: 3em;
       }
 
-      h1, label {
+      h1, h2, h3, label {
         font-family: monospace;
+      }
+
+      h3 {
+        margin-top: 3em;
       }
 
       p {
@@ -129,7 +133,7 @@
             There is no fixed schedule for posts (yet). So please leave your email if you want to be notified of future posts:
           </p>
           <input type="hidden" name="_subject" value="Contacting Becoming a developer Blog" />
-          <input class="email-input" type="email" name="_replyto" placeholder="Your email here">
+          <input class="email-input" type="email" name="_replyto" placeholder="Your email here" required>
           <input class="send-input" type="submit" value="Send">
         </form>
     </header>
@@ -200,7 +204,7 @@
               If you want to be notified when the next posts come out (I don't have a defined schedule for that yet), please leave your email here:
             </p>
             <input type="hidden" name="_subject" value="Contact - Becoming a developer Blog" />
-            <input class="email-input" type="email" name="_replyto" placeholder="Your email here">
+            <input class="email-input" type="email" name="_replyto" placeholder="Your email here" required>
             <input class="send-input" type="submit" value="Send">
           </form>
 
@@ -315,7 +319,7 @@
               I still don't have a defined schedule for my posts, so if you want to be notified when the next posts come out, please leave your email here:
             </p>
             <input type="hidden" name="_subject" value="Contact - Becoming a developer Blog" />
-            <input class="email-input" type="email" name="_replyto" placeholder="Your email here">
+            <input class="email-input" type="email" name="_replyto" placeholder="Your email here" required>
             <input class="send-input" type="submit" value="Send">
           </form>
 
@@ -324,17 +328,122 @@
           </p>
         </article>
       </div>
+
+      <div class="post">
+        <input class="post-title" id="applying-for-the-first-job-as-a-web-developer" type="checkbox" >
+
+        <label for="applying-for-the-first-job-as-a-web-developer">Applying for the first job as a web developer</label>
+
+        <article>
+          <p>
+            After 4 months studying web development full-time I decided I knew enough of the basics to start looking for a job as a junior web developer. It took me 3 months of job hunting to get hired. During this period I applied to 10 positions and my time was grossly divided like this: 60% of the time still studying, 20% looking for good jobs, 20% applying to them. I know that only 10 applications sound too few for such period, but I believe that fewer applications actually improve your odds of being hired in a given time period. There is a lot of luck involved in getting a job, but regarding what is not luck, I want to share what I did when looking for jobs, applying for jobs and interviewing.
+          </p>
+
+          <h3>Learn how to be a good developer, not a good candidate. That said...</h3>
+
+          <p>
+            When I stated at a public forum (Hacker News) that I had just started to study software development and my goal was to get hired in 4 months, one fairly upvoted comment was that it was "<i>not possible unless I fake my way in</i>". Obviously, I ignored the "not possible" part as it was just a dismissive blank statement, but I was surprised for a moment that someone could fake their way in a job as a developer. I thought one couldn't fake how to code but then realized that, like any profession, people could abuse interviewing skills and lack of ethics to get hired and stay in jobs they can not perform. To go this way is obviously a poor, unfulfilling, short-sighted choice. This is just to say that I will focus on skills that are applying mostly to the hiring processes of tech companies, sometimes orthogonal to coding skills. But remember that you still should spend most of your time studying and practicing the craft of software development, not interviewing skills. That said, to build your career, you have to land the first job.
+          </p>
+
+          <p>
+            One of the choices that might increase your chances to get lucky and land a job is the tech you study. <i>Study what is hot, but not what is hype</i>. When you are a hired professional you should choose the best tech for the job at hand, no matter what is hot or hype. But when you are starting, you choose the tech that is asked at the most job positions, simple as that. In the frontend world, for example, there is no doubt that a beginner trying to be hired should choose React. Just take a look at the latest <i>Who is hiring</i> thread at Hacker News, for example. A text search for React and you get 46 results. VueJS is a new framework, a lot of praise from developers and it looks the most hyped tech right now. But it is "only" mentioned 10 times in the thread. Ember is a very mature and solid framework, ready for production in professional environments. But it has 7 mentions. Angular has 16, a little better, but still no match for React right now. So at least one project using React in your portfolio is a great asset at a beginner's resume. Just don't forget that a good foundation in Javascript precedes any dive into the world of frontend frameworks.
+          </p>
+
+          <p>
+            Another part of the preparation before you even start applying is your portfolio. Every junior developer should have a few public projects to showcase their skills. The projects don't have to be awesome and the code can be a mess, as long as they improve from one project to another. Your more recent projects should be better built and more evidenced in your resume. But don't delete your early projects, no matter how bad the code and the end result are. Those senior developers evaluating you want to find candidates that can learn and improve. They know everyone's first projects are terrible.
+          </p>
+
+          <h3>What to look for when you are looking for a job</h3>
+
+          <p>
+            <i>Companies that are serious about hiring</i>. There are a lot of job ads out there that no one that cares is actually reading the applications. Look for good signs that a job ad is for real. The description of the company and of the job should be well written, with relevant technical information that you can tell was detailed by a developer. It is preferable when the method of contact an individual email, not a standard form. This excludes most of the huge companies, that get thousands of applications for any job position. That's why networking is a much more effective path to get hired at huge companies.
+          </p>
+
+          <p>
+            One thing that is a blessing for junior developers is when the hiring process starts with a code challenge. That means that the company actually cares about the hiring process, that some software developer will be part of the decision to hire from the beginning and that almost for sure you will get a response, Some few times even a feedback on your code. More senior developers usually don't like code challenges because they are time-consuming, not enough to evaluate in depth high skills and they have more real work to show. But for junior developers just beginning it is an opportunity to learn while doing, get valuable feedback and stand out for your hard work, as these jobs filter out lazy applicants. You will have less competition in any job that asks candidates to build something as a first step. This was actually my main criteria when searching for open positions, find the ones with a code challenge.
+          </p>
+
+          <p>
+            <i>Find a job/company that suits you, so you don't have to pretend you are a good fit</i>. This is not only about the "culture" of a company, I am of the opinion that you can adapt to almost any corporate culture if you have a nice boss and nice colleagues. But it is mostly about the job description. There are a lot of shitty jobs in web development. A typical example is some advertising agencies where the only task of a frontend developer is to transform graphic design templates into HTML and CSS. You will work alone, almost no Javascript, usually no senior developer to mentor or teach you and you will be treated as a disposable asset with no saying in anything that matters to the business. Sure, there are desperate times when one should accept worse conditions, but if you can, run away. Good jobs might also be filtered out for lack of a good fit. If you are planning to be a frontend developer more dedicated to the UX and design area of the field, don't apply for jobs looking for a full-stack more inclined to the back-end side of things.
+          </p>
+
+
+          <h3>Care about each application as it was the last one</h3>
+
+          <p>
+            The main perk of spending more time looking for and filtering the right job positions is that you can now spend more time on each application. Because there are just a few of them. Never do just the bare minimum to apply. You will end up being discarded by companies that really evaluate an application and be selected by the ones that don't care much about who is applying, they just need to fill a vacancy (which usually means it is a shitty job). Again, companies that ask for code challenges are expecting hard work. It is the reason they ask for it in the first place. A half-baked application will only waste your time and the chance at a good job. Back to my main mantra of only applying to a few selected jobs: only apply for those that you are motivated enough to put the effort.
+          </p>
+
+          <h3>Interview preparation and attitude</h3>
+
+          <p>
+            Interviewers of junior positions are always looking for three things: basic coding skills, ability to learn things and ability to communicate professionally. The coding skills assessment is usually based on the code challenge or your portfolio. Be prepared to answer questions about those. Review the code of your projects and, more important, the decisions you made when building it. Why use some tech, the doubts you had while building it. Interviewers will use these questions to check if you indeed build the things you say you built, but also to see if you care about the craft of software development. It matters more than you think to leave a good impression that you care about your code.
+          </p>
+
+          <p>
+            Your ability to learn things will be assessed through your curiosity, your desire and diligence to improve, your awareness that a software developer will be learning forever. It is important that you let your curiosity and eagerness to learn new things show in the interview. Another measure that interviewers will use is what have you studied and built so far against the time you took to do it. This is a reminder that slacking and procrastination while learning to code is a cardinal sin. Try the most to be really intensive in the hours you designated to study software development. Learn things, build things, create a body of work that you can show and impress people on how fast you get to that level. Even if it is still a basic level.
+          </p>
+
+          <p>
+            Professional communication is all about confidence and practice. Some people can fake confidence and some people are more natural as communicators. But you probably aren't one those people. Your confidence should ideally come from your acquired knowledge. That's why it is important to study for your job interview. Study your code, study the job description, study the company product, study the company culture. For each interview, spend one or two hours reviewing all of that. For each one. Don't be lazy. And practice. Practice with someone or in front of the mirror how to answer some common topics. Like explaining your last project and your code decisions. Or the classic "Why are you a good fit for this position?". It is common to become too self-aware and awkward during these practices, but they help. A lot. Don't avoid doing it because you feel stupid. You looked stupid too while learning to ride a bicycle. Deal with it. But don't practice only for the interview. Practice explaining tech concepts to non-tech people and product concepts to tech people. It takes some effort to properly communicate, if you realize it and care about it, you will inevitably get better.
+          </p>
+
+          <p>
+            Learn what the company's software development team values. Stalking mode. Find the developers and the CTO on LinkedIn, Twitter, their blogs. Read what they write about, what they care about regarding tech, the advice they give about software. You will probably come across a few common concepts they follow. Like Test Driven Development. Read about these concepts, but don't memorize the dogmas, understand the reasons why some people consider it a dogma. Create your own critical opinion about it. Don't be arrogant believing you have it all figured out, but don't be a sheep repeating what you read online. The idea is not necessarily to show the interviewer that you have the same opinion. But to show you know about that concept and have considerate thoughts about it.
+          </p>
+
+          <p>
+            Learn what you are good at. Learn what you are bad at. Mention both of them in the interview. I was very self-aware of my strengths: communication, work/study ethic, background in marketing (relevant as I was applying to be a web developer, mostly at startups) and my weaknesses: total lack of CS background (meaning I lack fundamental concepts in my education, like the architecture and design patterns basics), no experience as a developer in a professional environment (never worked on a code project within a team, no code reviews), very very basic Git knowledge. I was able to show how much value I could deliver to the company through my strengths and how self-aware and eager I was to learn and fix my weaknesses.
+          </p>
+
+          <h3>What not to care about, what to run away from</h3>
+
+          <p>
+            <i>Hiring is broken, but it is not up to you to fix it</i>. Most of the time you won't know why you got rejected. Most of the time the people that rejected you won't know either, even if they think they do. All hiring process in the world is a mess full of random decisions and all kind of bias. There are a lot of legitimate reasons why you never get an honest, straightforward feedback from companies too. Someday you might be in the position to try to fix this in your company. But not now, not as a candidate. Accept that you will never know why you got rejected or rationalize some reason that doesn't make you too emotional. And move on to the next application. Be pragmatic.
+          </p>
+
+          <p>
+            <i>People will undervalue you</i>. Chances are not all interviewers will be nice. On a promising application for a cool job, I got a call from the founder. He said something in the lines of "<i>You know, you have to understand that you are competing with a lot of young guys who are coding since they are twelve. You have a lot of catch up to do. You have to expect an intern salary and even so work harder to show you can become a good developer. Because I'm not sure you can.</i>" Maybe he was just using some shitty negotiation technique to hire me on a low salary, maybe it was ageism, maybe he thought I was delusional on my aspirations and decided to give me a lecture to be more down to earth. Whether he was stingy, mean or patronizing, it was definitely a place that I wanted distance. Learn how to identify places where people are not nice. Maybe it is just me and I shouldn't be advising people to follow such a subjective criteria. But I use "niceness" as the first and most important criteria to choose which people I want to be around and it has served me well all my life.
+          </p>
+
+
+          <h3>Coming next</h3>
+
+          <p>
+            This is a distilled advice from my experience getting my first job as a developer. I was very lucky to be hired by a great company with a great environment for a junior developer. And that's when my real education in software development begun. There is a lot you don't know about software when you are learning "just" to code. Most of it you learn by something called Code Review. Other developers take a look at the code that you want to add to a project, analyze it and criticize it about things you had never considered when you were just building amateur projects for your junior developer's portfolio. A new world of knowledge that I had to gain opened to me through the gates of Code Reviews. The next post will the completely dedicated to this process of professional software development.
+          </p>
+
+          <form id="article-contact-form" action="https://formspree.io/rodrigohgpontes@gmail.com" method="POST">
+            <p class="form-paragraph">
+              I have no defined schedule for my posts, so if you want to be notified when the next posts come out, please leave your email here:
+            </p>
+            <input type="hidden" name="_subject" value="Contact - Becoming a developer Blog" />
+            <input class="email-input" type="email" name="_replyto" placeholder="Your email here" required>
+            <input class="send-input" type="submit" value="Send">
+          </form>
+
+          <p>
+            Thank you for your time and I hope this was helpful to you. If you want to contact me, use my github handler at gmail.
+          </p>
+
+        </article>
+      </div>
     </main>
 
     <footer>
-      <p>Copyright 2017 | Contact me using my github handler on gmail</p>
+      <p>Copyright 2017 | Contact me using my github handler at gmail</p>
     </footer>
 
     <script>
       var url = document.URL;
       var id = url.substring(url.lastIndexOf('#') + 1);
+      var input = document.getElementById(id);
 
-      document.getElementById(id).checked = true;
+      input.checked = true;
+      var query = '[for="' + id + '"]';
+      var label = document.querySelectorAll(query)[0];
+      var yCoord = label.getBoundingClientRect().top - 30;
+      window.scrollTo(0, yCoord);
     </script>
   </body>
 </html>
