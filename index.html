@@ -439,11 +439,16 @@
       var id = url.substring(url.lastIndexOf('#') + 1);
       var input = document.getElementById(id);
 
-      input.checked = true;
-      var query = '[for="' + id + '"]';
-      var label = document.querySelectorAll(query)[0];
-      var yCoord = label.getBoundingClientRect().top - 30;
-      window.scrollTo(0, yCoord);
+      if (url.lastIndexOf('#') > 0) {
+        input.checked = true;
+        var query = '[for="' + id + '"]';
+        var label = document.querySelectorAll(query)[0];
+        var yCoord = label.getBoundingClientRect().top - 30;
+        setTimeout(function() {
+          window.scrollTo(0, yCoord);
+        }, 200);
+
+      }
     </script>
   </body>
 </html>
