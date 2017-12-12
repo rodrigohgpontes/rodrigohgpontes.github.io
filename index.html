@@ -38,7 +38,22 @@
 
       .email-input {
         width: 20em;
-        height: 2em;
+        height: 2.6em;
+      }
+
+      .textarea-input {
+        display: block;
+        width: 30em;
+        max-width: 94%;
+        height: 8em;
+        margin: 1em 0px;
+      }
+
+      .name-input {
+        display: block;
+        width: 20em;
+        height: 2.6em;
+        margin: 1em 0px;
       }
 
       .send-input {
@@ -428,6 +443,100 @@
 
         </article>
       </div>
+
+      <div class="post">
+        <input class="post-title" id="educational-code-reviews" type="checkbox" >
+
+        <label for="educational-code-reviews">Educational Code Reviews</label>
+
+        <article>
+          <p>
+            So I got hired at my first job as a junior web developer at a fintech startup. I knew I was about to learn a lot and fast, I just didn't know how it would happen. Now, a few months in, I can point exactly at what made a world of difference in my education at software development: code reviews. It is obvious to me that what made me progress from learning to code to learning software development is being part of a team with good code review processes. I now believe code reviews are such a big deal that, from now on, I will capitalize all of them.
+          </p>
+
+          <p>
+            Code Reviews are so powerful as an educational tool because they are quality feedback from peers (usually) familiar with the context and that have incentives to keep the quality of the code base high. The feedback is very specific to the exact lines you wrote. And allows for demonstration and debate of theoretical concepts applied to a very concrete and specific situation.
+          </p>
+
+          <p>
+            Code Review is the single best educational resource that only a professional environment can offer (I'm planning to take a shot at changing this, I will explain better at the end of the post). But any great resource can be misused, neglected or misdirected. I want to share some thoughts from a junior developer's perspective so senior developers can develop more empathy when reviewing juniors. And also so junior developers know better on what to look for when colleagues are reviewing their code. I am just beginning (only about 6 months at my first job as a dev), so I can't be confident that this would apply to everyone in every company. I am just sharing some impressions from my experience so far.
+          </p>
+
+
+          <h3>Styling and formatting matters, but it is basically a one-time lesson</h3>
+
+          <p>
+            Juniors usually don't know how important standards are to make code readable by other developers. It is necessary to take the time to explain the reasons why and share the standards used by the team. It's an easy lesson, but must not be neglected. Once explained, the enforcement must be automatic. One shouldn't have to waste mental effort on something that is supposed to be just blindly following agreed rules. A linter plugin at the code editor is usually enough.
+          </p>
+
+          <h3>Code Review is collaboration</h3>
+
+          <p>
+            The crux of getting all the benefits of the Code Review as an educational process was to correctly internalize a new mindset regarding education: it is all about learning as a team. It is natural but harmful for junior developers to see senior developers reviewing their code as teachers grading their exams. That's a wrong perception that must be fixed from start. Juniors have to understand that they are being corrected without being judged. They are being questioned without being mistrusted. They are doing stupid mistakes without being stupid. I am not sure how common or rare it is, but I was lucky enough to find a company where everyone is helping everyone, not trying to prove who is better or using Code Reviews as a platform for office politics.
+          </p>
+
+          <p>
+            The team, not the junior developers themselves, has the onus to create this welcoming environment. It is in benefit of everyone involved - the juniors, the rest of the team and the company - that junior developers be very comfortable and safe being reviewed and also incentivized to review other's code. The goals of a team onboarding a junior developer should be: minimize the anxiety of opening a PR, provide a safe environment for making mistakes - e.g. no production database writing access, and be sure that the junior understand the mistakes they made. The goals as a junior developer entering a team should be: never make the same stupid mistake twice, create software that delivers real value, and be humble to learn from others that know better than you. Being defensive when being reviewed ruins it for everyone.
+          </p>
+
+          <p>
+            A boost in the learning comes from taking different roles in the process. I learned a lot from being reviewed, but also from reviewing other junior developers, reviewing senior developers and even reading senior-senior reviews. As long as I took the time to read and understand some of the more sophisticated code and commentaries. Everyone has different angles to offer and everyone has a few blind spots too. Code Reviews are always a teamwork with rotating roles.
+          </p>
+
+
+          <h3>Code Reviews are part of the job, not a favor or luxury</h3>
+
+          <p>
+            No matter who wrote the code, every line of code is important and deserves attention. Part of the process is to check every line for every kind of bugs and improvements. At the same time, if everything is good, it is ok to just approve it (and maybe leave a few compliments). No need to be picky about something just to keep the appearances that you indeed reviewed it. The risk of neglecting to thoroughly review a code is more salient in the two extremes: when a junior is writing a very simple and basic task that has "no way" to mess up or when a very experienced and admired developer is writing any code and people just assume they are right. Reviewing code should be author-agnostic.
+          </p>
+
+          <p>
+            Code Review should have steps and structure. That's a particular topic that I need significant improvement. I usually review reading the code in an unstructured way and almost random order. My learning list includes talking to some developers and asking them how they do Code Reviews. Possibly creating my own checklist, like an attack plan. With these steps clear in my mind, I will also effectively internalize what is important in my own code while I am writing it.
+          </p>
+
+          <p>
+            Tests deserve special attention. Tests are even more conceptual than regular coding. When you code a feature, if it works, it works. It might have all sort of spaghetti code and technical debt and hidden bugs, but you start from something that is delivering some value at least. And the intended goal of the code usually is obvious. With tests, there is no such thing as "it works" and the intended goal of a test is exactly what must be reviewed. Tests that pass only deliver any value if they are testing the right things the right way. What are the right things and how is the right way are definitely not easy to grasp as a junior developer. It is still something I consider among my weaknesses currently. When spotting a problem in a test code, it is good to take more time than usual to write the comments in the PR. Short sentences might be enough to show that a variable name is not ideal. But to properly explain why a test needs changes, some more verbosity is welcome. Even Hemingway sometimes used longer sentences.
+          </p>
+
+
+          <h3>You gotta help me help you</h3>
+
+          <p>
+            I learned that the Code Review should be on your mind as soon as you start writing the first lines of code. It should not be an afterthought once you finished the first version of your task. Two things matter most: planning deploys optimizing for short pull requests and putting serious effort in descriptions.
+          </p>
+
+          <p>
+            Big Pull Requests are the worst. The more files and lines of code changed in a PR, the worst will be the review you get. It was particularly hard for me to learn how to properly separate the code I am writing in coherent modules that could be reviewed independently. But it is something that the whole team must have conviction. One trick that helps is to accept the idea that some merged code won't deliver value at first but are planned and robust enough to be "deployable". Code Reviews should be up a maximum of 193 lines changed. Of course, any number would be arbitrary, so I just wanted to stress that with a random number. But is useful to keep the idea that if it is over that is probably too long. Keep in mind that the more time a developer spends reading the code the less focused they will be. And it is a waste of everyone's time, unhelpful and usually harmful to get a Code Review from someone who isn't properly focused on the task.
+          </p>
+
+          <p>
+            I began to believe that commit messages and PR descriptions are a high form of literature. Reviewers need context. In my company, we do not include comments in the code. So, aside from the code speaking for itself, the commit messages and PR descriptions are essential documentation of what is happening in each part of the code. The commit messages must be concise, yet make the objective of that commit clear. An extra bonus is that this practice nudges you to have very clearly in your head what is the purpose of every commit. The PR descriptions must necessarily include three things: why it was created, what is being added and what the end result is. Always starts with why that code must be merged - what problem it solves, but also how it affects written and future code. Then what was effectively done - the files and features you are changing and creating, a topical summary of what was added and removed. Finally, how it is working. In my case, as a frontend developer, it often includes screenshots or animated GIFs showing how the feature works on the screen. Putting effort in these written communication skills paid off as I made easier for my reviewers understand what I did and get an extra time to educate me in return.
+          </p>
+
+
+          <h3>Educational Code Reviews</h3>
+
+          <p>
+            To summarize what worked in my experience, these are the necessary factors to make the Code Review process a great learning tool in a team: a supportive environment, reviewers that are not teachers, junior developers being reviewed and reviewing, well-thought-out and well documented PRs. This is all  (I would guess) commonly found in professional environments, but virtually inexistent for people still learning to code. That's a problem I want to give a shot at solving.
+          </p>
+
+          <form id="article-contact-form" action="https://formspree.io/rodrigohgpontes@gmail.com" method="POST">
+            <p class="form-paragraph">
+              I am starting a project to provide Code Reviews to people learning to code. If you are starting in the path of software development, already building something, and not yet working as a software developer, you are in the same situation I was a few months ago. And for whom I am starting this project. If you are interested in getting code reviews for your project, please fill the form below to get more information.
+            </p>
+            <input type="hidden" name="_subject" value="Interest in ECR - Becoming a developer Blog" />
+            <input class="name-input" type="text" name="name" placeholder="Your name here" required>
+            <input class="email-input" type="email" name="_replyto" placeholder="Your email here" required>
+            <textarea class="textarea-input"  name="comment" placeholder="Let me know if you have suggestions or doubts"></textarea>
+            <input class="send-input" type="submit" value="Send">
+          </form>
+
+          <p>
+            Thanks and please free feel to contact me with any feedback about this or other posts.
+          </p>
+        </article>
+      </div>
+
     </main>
 
     <footer>
