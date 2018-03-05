@@ -20,6 +20,7 @@
 
       h3 {
         margin-top: 3em;
+        font-size: 20px;
       }
 
       p {
@@ -537,10 +538,145 @@
         </article>
       </div>
 
+      <div class="post">
+        <input class="post-title" id="written-communication-skills" type="checkbox" >
+
+        <label for="written-communication-skills">Written Communication Skills in Software Development</label>
+
+        <article>
+          <p>
+            As a 38-year-old becoming a software developer, I knew my previous work experience in unrelated fields would help me in my new career. I was just not exactly sure how. Now I know clear communication and good writing skills are how. When I started learning to code I kept reading that a good developer needed good communication skills, but it was always hard to imagine exactly why and where it was needed. Now I see clearly how a better code is written when you write good function and variable names, good test descriptions, good commit messages, good pull requests descriptions, good user stories and specifications. And these are only the more code-related, written applications of this skill. There are still written and oral communication challenges when discovering demands, deciding prioritization and presenting features with product owners, managers, and non-tech colleagues. In this short term as a web developer, I learned a little about the importance and application of communication for software development. I think personal interest and professional experience taught me a few things that are extremely useful in day-to-day activities as a programmer. I will share some of these insights, focusing specifically on writing as an effective tool for communication, rather than the more broad and complex subject of communication itself.
+          </p>
+
+          <h3>It is hard to write consistently well. It is easy not to write consistently poorly.</h3>
+
+          <p>
+            Communication, particularly in the written form, is a skill that I care about. Caring is enough to improve anyone's writing skills to the point when it is one of your strengths, not weakness. There is no secret or steep learning curve if your goal is to avoid poor communication in a professional environment. I have no illusions that this is where I stand as a "writer": I can avoid poor written communication. If the goal is to become a great writer, consistently producing great pieces of text, whatever the context, then it is hard. You will need an order of magnitude more hard work and a better teacher than me. But effective communication through writing is achievable. Anyone who cares can transform communication from an obstacle that gets in the way of your code to a tool that helps you develop software.
+          </p>
+
+          <p>
+            I am not saying it lightly that is important to care. The implicit and explicit reasons a professional has to not care about communication are, at once, cause and justification for their poor communication. Not caring about your writing comes in two flavors: conscious neglect and unconscious neglect. The conscious way usually comes with some arrogance. That explaining some concept in proper words is beneath you. That somehow your code speaks for itself. That you are so sure you are right in what you are doing that you do not even bother to explain why. But people that consciously do not care about their writing are also not reading this. So I won't spend much time on this case.
+          </p>
+
+          <p>
+            Now, to unconsciously neglect your writing is the most common way to do it. You have the idea in your head, you write it in an automatic way that you barely process through your brain and then consider the task done and move on. You assume that your idea is reflected in those words as, obviously, you wrote those words to express that idea. What could go wrong? A lot. What you neglect is everything that you have when writing that your readers lack when reading. Things like: hidden assumptions that fundament your idea, the context where those ideas are applied, the exact meaning you are using for ambiguous words, the goal you want to achieve with that text, the access to all other texts that help to define the meaning of your message, the understanding of the right tone and intention that one should read those words. These things are only noticed if you pay attention. But these oversights can easily be avoided by following a simple process:
+            <ol>
+              <li><p>Think about the message before you write it.</p></li>
+              <li><p>Think about the person while you write it.</p></li>
+              <li><p>Rewrite it.</p></li>
+            </ol>
+          </p>
+
+          <h3>Before you write: think about the message</h3>
+
+          <p>
+            It is important to think through the message you want to pass and have it clear in your mind. It helps to write it down in an ordered list, prioritizing the most important topics. There is usually a core message that prompts you to write that text. That should be clear for anyone reading it. The message you want to pass doesn't have to be just hard facts, like informing someone that a feature was deployed. Sometimes the core message of your communication is to transmit something intangible like a sense of urgency for a task while keeping it polite and not look demanding.
+          </p>
+
+          <p>
+            To transmit abstract concepts is tricky and when it involves subjectivity, like feelings and perceptions, it comes full of dangers. The danger of being too subtle, the danger of being passive-aggressive, the danger of being rude. That's why I always prefer to check that my intentions are candid and transparent. But with written communication, intention only is seldom enough. Thus the power of thoroughly thinking your message beforehand and distilling it to its essence. Back to the example above, if you took the time to understand that your core message is to transmit your sense of urgency - not to complain, not to demand, not to intrude - then you already have the right word to use. And your text might look something like this: "<i>Regarding that task, I'd just like to let you know that it is of high urgency for me because of its impact in this other task I have with my team. I don't mean to interfere with your work process or sound demanding, just letting you know so we are on the same page. Thanks!</i>"
+          </p>
+
+          <p>
+            I used generic terms, but a better phrasing here would include exactly how one task impact another. This would signal that you want to convince the reader that this is important, not just tell them. So the second topic you want to include in your message is to explain why your sense of urgency is justified. Put that on your list.<br>
+            Also, for sensitive topics like this, it helps if there is enough informality in your communication that you can add some jest or emoticons to set the right tone. A ":)" at the end would help set a light, not demanding tone.<br>
+            Last thing about this example: it is certainly the wrong wording. It is impossible to set the right tone if the reader is imaginary. If you read this and it sounded not exactly right, a good exercise is to rewrite just how you would be comfortable reading it.
+          </p>
+
+          <h3>While you are writing: think about the person</h3>
+
+          <p>
+            As a writer, you are serving the reader. As we are not talking about literary writing, you must avoid ambiguity and prioritize content over style. The person who will read your text is the dictator of every word you write. You should choose the synonym the reader will most likely recognize, you should know which concepts the reader is and isn't familiar with, you should know where the reader will read it and when. You should exercise your empathy, anticipating possible doubts, reasons for confusion and counter-arguments. When writing, you should think as your reader.
+          </p>
+
+          <p>
+            A great start, for every communication, is to establish common ground, guarantee that you and your reader are on the same page. This is actually very easy, just explicitly state what you are talking about in that text at the very beginning. This is paramount in emails. The first thing you write is what that email is all about. A feature announcement, a complaint, an FYI regarding a specific topic, a request for a favor. One very objective and contextualizing line. This is particularly important in communication channels that do not provide context by themselves like email and messaging apps. I personally have the practice of repeating this context-giver one-liner on emails as both the email subject and the content's first line, as people have different practices on reading or not email subjects. On Slack, I always add it just after the initial greeting, in the very same line. By comparison, a Pull Request description already inherits the context for things like the repository, the branch, even the person who is creating it. Commonly used naming patterns (like <i>feature/...</i>) also help. So you can start with the core message (i.e. the feature you are developing) in the title. Still, it is a practice in my team to begin the PR description with a "<i>Why?</i>" section, that explains why that feature is being created and the business needs behind it.<br>
+            It is not by chance that Pull Requests have so much more emphasis in context. Some of its readers are in the future. From your future self to future developers that your company not even hired yet and won't get to know you personally. So all the context you have just for living in the present time have to be registered in written form.
+          </p>
+
+          <p>
+            Another kind of challenge comes when you have to communicate technical topics to non-technical people. There is a very thin line between educating and patronizing, between explaining by analogies and dumbing down, between using proper technical terms and obfuscating. A good practice is to decide beforehand what you want and what you don't want to explain. You might decide it's important to explain what a deploy is but refrain from going deeper about your company's continuous deployment practices. If you think it will be useful for the reader to learn about a particular topic, take some time to explain it. It will spread the knowledge and maybe even save you some time in the future when communicating with the same person. A personal choice is that I always aim at using words and concepts a little bit more advanced to what I expect my reader to know. This way, if I underestimated the reader's knowledge, I rarely miss that much that is patronizing. And if I overestimated it, I just have to explain a little further. On average, I am pushing the reader's knowledge a little bit wider.
+          </p>
+
+          <h3>After you wrote it: re-read it thinking about the person and the message, and rewrite it</h3>
+
+          <p>
+            My personal heuristic is to only consider an important text completed once I re-read it from the first to the last line and don't find a single comma I want to change. A less strict rule, applied to less important texts, is to consider it completed once I don't make any changes to the meaning of a sentence while re-reading. In any case, this algorithm requires at least one complete reading after I finished writing it. No matter how much you planned your message, no matter how much conscious you were about the reader, your focus when first writing is (and should be!) on putting your idea on the paper. There is a lot on your mind and you have to save it somewhere before taking the time to improve it.
+          </p>
+
+          <p>
+            The idea in your head is like the beautiful, complete picture at the box of a jigsaw puzzle. Your first draft is the moment you open the box and throw all the puzzle pieces on the table. Only then starts the real work of transforming the mess you created on the image you have in your head. The principle remains the same while rewriting: think about the message and the person who will read.
+          </p>
+
+          <p>
+            There are a lot of possible things to fix that you usually get while re-reading. The core concept is not clear. A part of the message is missing. The tone is not right according to your own intentions. A paragraph is not coherent by itself. There are words the reader will probably don't understand. A chosen synonym is not exactly right in its meaning. There are repeated words. There are missing words. There are too many words. Typos. Grammatical and orthographic errors. A sentence is too long (thus hard to parse). The formatting is obscuring the understanding. A word, sentence or paragraph meaning is ambiguous. These are bugs preventing the characters you wrote to achieve the desired effect.
+          </p>
+
+          <h3>Things that do not seem to matter, but do</h3>
+
+          <p>
+            <strong>Formatting</strong>. A rule of thumb I use for emails is to always skip a line between paragraphs. A paragraph should encapsulate a unique concept, maintaining coherence and completeness in itself. So it is important for the reader to visually notice this separation of topics. I use a lot the expedient of bold and italic. It is easy to abuse these features, but it may be very helpful in properly transmitting a message with the right tone, focus, and meaning. I use both italics and quotation marks to make it obvious when I am quoting someone else. I use bold when I want to emphasize a keyword that would help someone that is just skimming the text. That's the case with this paragraph. The topic header implies a list - "<i>Things that...</i>". I wanted to present that list in a skimmable way, without creating another level of subheaders that would disobey the rest of this text pattern. So I started the paragraph with a one-word sentence and made it bold.<br>
+            Another great feature for developers is Markdown styling. Wherever it is available, you should learn all rules and use it whenever you can. Of course, there are ways to abuse it, but it is usually very safe to use. As every code sample should be marked as code, every list of bullet points should be marked as such.
+          </p>
+
+          <p>
+            <strong>Order</strong>. The order you present your message matters a lot. The email rule to objectively provide the context in the subject and the first line is an example of this. Never create suspense for your core message. It is easy to illude yourself that you will create the atmosphere before dropping the bomb that will impress everyone that reads it. It is more likely that you will annoy them and most people will never get to the punchline and just skip it. Even if you have the talent for it, professional communication is not the place for Back Mirror plot devices.<br>
+            But if the core message you have to pass is something completely new for the readers, there is the risk of getting too fast to it and confusing everyone. A general rule that helps to properly order your text is to always begin with the familiar. Your text, your paragraphs, your sentences should begin with ideas that the reader is already familiar. They may be familiar because of some knowledge you assume they have or familiar because you introduced the concept in an earlier paragraph. The exception comes from the need to balance this with the no-suspense rule: never leave essential information only at the end of the text. If the core message you want to communicate is also the most alien concept to the reader, you can start with it, even if the reader feels confused at first. But also keep it short, to minimize confusion, acknowledge it is something new and then move on to properly explain the concept through the rule of beginning from familiar to novelty.
+          </p>
+
+          <p>
+            <strong>Word choice</strong>. Synonyms are not strictly equal among themselves. The language is more organic, less logic than code. Every word choice brings its own nuances in meaning. A word's meaning itself varies in time and space. Always aim for the word that is the right fit for the context: it can't be too formal, or too informal, too snob, too vulgar. Also, aim for the word that is most familiar to the reader. You want the reader get your message, not be distracted by your vocabulary. But these goals have a limit you can't cross: never sacrifice the meaning. If you have the word that conveys the exact concept you want to pass, keep it. If necessary, include more context and explanation so that new word does not add confusion. You do that properly and you just taught the reader a new word that made them perfectly capture the message you were trying to communicate. Every word counts.
+          </p>
+
+          <p>
+            <strong>Sentence structure</strong>. It is a good practice to use the active voice - i.e. when a subject does something, instead of something being done by a subject - in your sentences. It is easier for the reader to parse it and it brings more objectivity in the way you transmit a message. But there are a few important exceptions to this rule of thumb. When you are following the principle of ordering your sentence from more familiar to less familiar information, the more familiar information might not be the subject of your sentence. For example: "<i>I didn't want to use a new framework for this project. This decision was made by our CTO.</i>" The second sentence becomes more clear when you start by referring the information presented in the first one. It makes a smoother transition from one sentence to another.<br>
+            Another exception is when you have no interest in giving importance to the subject of the sentence. For example: "<i>Our team is composed of four developers and one product manager. The name of our team is Go Horse Squad and our domain is growth, but only the beginning of the sales funnel. The end of the funnel is handled by another squad.</i>" The last sentence is in passive voice because you are presenting your team to someone and there is no reason to get into details about another team. It could be confusing to the reader. In this case, it also follows the principle of beginning with the familiar information - the sales funnel - and end with the new info - there is another squad.<br>
+            Also, passive voice is the only choice if you don't want to be explicit about who is the subject of the sentence. For example: "<i>The decision was made, now we have to deal with it.</i>" This sentence is adequate if said decision is a sensitive topic and you want to refrain from an argument about who made it and their reasons. You want to transmit the sense that there is nothing to be done and you all must be pragmatic about it. If it was rephrased as "<i>The CTO made the decision, now we have to deal with it.</i>" it is a completely new meaning. The impression the reader gets now is that the CTO is the focus of your message, implying that you are criticizing his decision and you are dealing with its consequences with more grudge than pragmatism.
+          </p>
+
+          <h3>Communication feedback is subtle and unassuming. Learn to recognize it</h3>
+
+          <p>
+            Good professional writing is easy to learn, it only takes deliberate practice. But how do you tell if you are improving? This one part of the learning process is not as straightforward as the rest. Written communication is usually asynchronous and rarely you get spontaneous feedback on your communication skills. Mostly because the message you want to pass is more important than how you pass it. So you have to look for any feedback about what you communicated and distill it to what is actually a feedback on <i>how</i> you communicated it.
+          </p>
+
+          <p>
+            The most obvious case is when people criticize the tone of your writing. If people say you were too rude, demanding or harsh on your email, and you had not the intention to be any of those things, then this is a feedback on your communication skills. When the tone is more annoying than offensive it is harder to get this feedback though. If you are too prolix, makes too many jokes or use too many emoticons in your emails, you will only find out if you develop your self-awareness, because people tend to not explicitly say those things to your face. Or you can ask for blunt feedback from someone with enough trust to be honest.
+          </p>
+
+          <p>
+            One topic that asking for feedback doesn't help much is the most important one: if your message was understood. People can only answer based on the message they understood and if they misunderstood it, they still can say it was perfectly clear to them. Only that what was clear was the wrong thing. How to find out? You have to find clues in what people say back to you.<br>
+            When someone asks something that was already in your first text, this is a feedback on your communication skills. It is rude to say something like "<i>As I said before, ...</i>" and go on repeating the same thing. Take the opportunity to re-read how you wrote the first time and change it to improve clarity. When someone makes evident that they didn't read it to the end, the order you wrote could be improved, or your text was too long, or it was not a smooth reading.
+          </p>
+
+          <p>
+            Of course, all these misconceptions by the readers could be their fault, not yours. Communication has two sides and only one side is needed to ruin it. But it is more productive to always assume the fail is on your side. You failed to properly communicate something and that opened room for the other part misunderstanding it. This doesn't have to be true to be useful. You may practice defensive writing, thinking about all the ways the reader could misunderstand your text and avoiding them. You have to assume good faith by the reader on wanting to get it right. If that's not the case, you need an extremely defensive writing that is the specialty of lawyers. And the legalese language used by lawyers is the opposite of effective communication in regular professional environments. So if you have a boss or colleague that always willingly misrepresent what you write, you have a bigger problem than your writing skills.
+          </p>
+
+          <h3>Sign my newsletter for regular writing tips</h3>
+
+          <p>
+            I will continue to write about varied topics about becoming a software developer in this blog. But, with this post as the kick-off, I am starting a new venture: a newsletter focused on giving written communications tips to software developers.
+          </p>
+
+          <p>
+            As this is the topic that I am most able to help the other developers in my company, I thought about making it a side-project and help more people. Fortunately, I stumbled upon a great new service that might be the perfect way to do that. <strong>Substack</strong> is a startup that offers a platform for content creators to publish (optionally) paid newsletters. I will start with a free newsletter of course, but if it gets traction and I decide to invest more regular time in creating content, it offers an easy way to monetize it through a business model more suited to my personal preferences than ads.
+          </p>
+
+          <p>
+            So, if you are interested in getting more tips about effective written communication for software developers, please subscribe to my newsletter here: <a href="https://writingfordevelopers.substack.com/">Writing for Developers Newsletter</a>
+          </p>
+
+          <p>
+            Thank you for your time and I hope this was helpful to you. If you want to contact me, use my github handler at gmail.
+          </p>
+        </article>
+      </div>
+
     </main>
 
     <footer>
-      <p>Copyright 2017 | Contact me using my github handler at gmail</p>
+      <p>Copyright 2017-2018 | Contact me using my github handler at gmail</p>
     </footer>
 
     <script>
